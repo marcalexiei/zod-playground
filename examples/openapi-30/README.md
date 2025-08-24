@@ -13,3 +13,9 @@ pnpm --filter=openapi-30 run example:number
 ```sh
 pnpm --filter=openapi-30 run example:record
 ```
+
+### Tuple
+
+```sh
+pnpm --filter=openapi-30 run example:tuple
+```

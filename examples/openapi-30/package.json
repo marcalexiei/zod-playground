@@ -8,6 +8,7 @@
   },
   "scripts": {
     "example:number": "node ./src/number.ts",
-    "example:record": "node ./src/record.ts"
+    "example:record": "node ./src/record.ts",
+    "example:tuple": "node ./src/tuple.ts"
   }
 }
