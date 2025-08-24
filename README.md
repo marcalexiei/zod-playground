@@ -2,6 +2,8 @@
 
 ## Setup
 
+Use node `^24`.
+
 ```sh
 pnpm i
 ```
