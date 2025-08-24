@@ -1,0 +1,12 @@
+{
+  "name": "openapi-30",
+  "type": "module",
+  "dependencies": {
+    "@seriousme/openapi-schema-validator": "2.5.0",
+    "typescript": "5.9.2",
+    "zod": "4.1.1"
+  },
+  "scripts": {
+    "example:number": "node ./src/number.ts"
+  }
+}
