@@ -4,11 +4,12 @@
   "dependencies": {
     "@seriousme/openapi-schema-validator": "2.5.0",
     "typescript": "5.9.2",
-    "zod": "4.1.1"
+    "zod": "4.1.3"
   },
   "scripts": {
     "example:number": "node ./src/number.ts",
     "example:record": "node ./src/record.ts",
-    "example:tuple": "node ./src/tuple.ts"
+    "example:tuple": "node ./src/tuple.ts",
+    "example:tuple-null": "node ./src/tuple-null.ts"
   }
 }

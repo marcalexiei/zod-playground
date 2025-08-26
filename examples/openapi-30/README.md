@@ -19,3 +19,9 @@ pnpm --filter=openapi-30 run example:record
 ```sh
 pnpm --filter=openapi-30 run example:tuple
 ```
+
+### Tuple with null
+
+```sh
+pnpm --filter=openapi-30 run example:tuple-null
+```

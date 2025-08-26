@@ -4,8 +4,14 @@ import { z, type ZodType } from "zod";
 export async function checkZodAgainstOpenAPI30(options: {
   zodSchema: ZodType;
   validOpenAPISchema: Record<string, unknown>;
+  /** use this to check if valid schema is correct */
+  includeZodSchemaInOutput?: boolean;
 }) {
-  const { zodSchema, validOpenAPISchema } = options;
+  const {
+    zodSchema,
+    validOpenAPISchema,
+    includeZodSchemaInOutput = true,
+  } = options;
 
   const openAPISchema = z.toJSONSchema(zodSchema, {
     target: "openapi-3.0",
@@ -21,7 +27,7 @@ export async function checkZodAgainstOpenAPI30(options: {
     },
     components: {
       schemas: {
-        Code: openAPISchema,
+        ...(includeZodSchemaInOutput ? { Code: openAPISchema } : {}),
         CodeCorrect: validOpenAPISchema,
       },
     },
